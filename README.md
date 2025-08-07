@@ -1,7 +1,6 @@
 # Noxcoin
 
-Copyright (c) 2014-2024, The Noxcoin Project
-Portions Copyright (c) 2012-2013 The Cryptonote developers.
+Copyright (c) 2025, The Noxcoin
 
 ## Table of Contents
 

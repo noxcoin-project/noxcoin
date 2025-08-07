@@ -29,9 +29,7 @@ Copyright (c) 2025, The Noxcoin
 ## Development resources
 
 - Web: [noxcoin.org](https://noxcoin.org)
-- Mail: [dev@noxcoin.org](mailto:dev@noxcoin.org)
 - GitHub: [https://github.com/noxcoin-project/noxcoin](https://github.com/noxcoin-project/noxcoin)
-- IRC: [#noxcoin-dev on Libera](https://web.libera.chat/#noxcoin-dev)
 - It is HIGHLY recommended that you join the #noxcoin-dev IRC channel if you are developing software that uses Noxcoin. Due to the nature of this open source software project, joining this channel and idling is the best way to stay updated on best practices and new developments in the Noxcoin ecosystem. All you need to do is join the IRC channel and idle to stay updated with the latest in Noxcoin development. If you do not, you risk wasting resources on developing integrations that are not compatible with the Noxcoin network. The Noxcoin core team and community continuously make efforts to communicate updates, developments, and documentation via other platforms – but for the best information, you need to talk to other Noxcoin developers, and they are on IRC. #noxcoin-dev is about Noxcoin development, not getting help about using Noxcoin, or help about development of other software, including yours, unless it also pertains to Noxcoin code itself. For these cases, checkout #noxcoin.
 
 ## Vulnerability response
@@ -46,8 +44,6 @@ The [Noxcoin Research Lab](https://src.noxcoin.org/resources/research-lab/) is a
 The Noxcoin research community is available on IRC in [#noxcoin-research-lab on Libera](https://web.libera.chat/#noxcoin-research-lab), which is also accessible via Matrix.
 
 ## Announcements
-
-- You can subscribe to an [announcement listserv](https://lists.noxcoin.org) to get critical announcements from the Noxcoin core team. The announcement list can be very helpful for knowing when software updates are needed.
 
 ## Translations
 The CLI wallet is available in different languages. If you want to help translate it, see our self-hosted localization platform, Weblate, on [translate.noxcoin.org]( https://translate.noxcoin.org/projects/noxcoin/cli-wallet/). Every translation *must* be uploaded on the platform, pull requests directly editing the code in this repository will be closed. If you need help with Weblate, you can find a guide with screenshots [here](https://github.com/noxcoin-ecosystem/noxcoin-translations/blob/master/weblate.md).
@@ -68,43 +64,17 @@ If you need help/support/info about translations, contact the localization workg
 
 Noxcoin is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
 
-**Privacy:** Noxcoin uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain private by default.
+**Based on Monero Core:** Ring Signatures, Stealth Addresses, RingCT, and Bulletproofs+ — same privacy foundation.
 
-**Security:** Using the power of a distributed peer-to-peer consensus network, every transaction on the network is cryptographically secured. Individual wallets have a 25-word mnemonic seed that is only displayed once and can be written down to backup the wallet. Wallet files should be encrypted with a strong passphrase to ensure they are useless if ever stolen.
+**New Emission Schedule:** 21 million NOX total supply instead of Monero’s infinite tail emission.
 
-**Untraceability:** By taking advantage of ring signatures, a special property of a certain type of cryptography, Noxcoin is able to ensure that transactions are not only untraceable but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer.
+**Faster Blocks:** 120-second block time with no penalty mechanics.
 
-**Decentralization:** The utility of Noxcoin depends on its decentralised peer-to-peer consensus network - anyone should be able to run the noxcoin software, validate the integrity of the blockchain, and participate in all aspects of the noxcoin network using consumer-grade commodity hardware. Decentralization of the noxcoin network is maintained by software development that minimizes the costs of running the noxcoin software and inhibits the proliferation of specialized, non-commodity hardware.
+**Low Fees:** Base fee: 0.0000005 NOX/kB — up to 6× cheaper than Monero.
 
 ## About this project
 
-This is the core implementation of Noxcoin. It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of Noxcoin that uses the protocol and network in a compatible manner.
-
-As with many development projects, the repository on GitHub is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
-
-**Anyone is welcome to contribute to Noxcoin's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase, it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
-
-## Supporting the project
-
-Noxcoin is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. Both Noxcoin and Bitcoin donations can be made to **donate.noxcoin.org** if using a client that supports the [OpenAlias](https://openalias.org) standard. Alternatively, you can send NOX to the Noxcoin donation address via the `donate` command (type `help` in the command-line wallet for details).
-
-The Noxcoin donation address is:  
-`888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H`  
-Viewkey:  
-`f359631075708155cc3d92a32b75a7d02a5dcf27756707b47a2b31b21c389501`  
-Base address for restoring with address and viewkey:
-`44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A`  
-
-The Bitcoin donation address is:  
-`1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H`
-
-Core development funding and/or some supporting services are also graciously provided by [sponsors](https://www.noxcoin.org/community/sponsorships/):
-
-[<img width="150" src="https://www.noxcoin.org/img/sponsors/tarilabs.png"/>](https://tarilabs.com/)
-[<img width="150" src="https://www.noxcoin.org/img/sponsors/symas.png"/>](https://symas.com/)
-[<img width="150" src="https://www.noxcoin.org/img/sponsors/macstadium.png"/>](https://www.macstadium.com/)
-
-There are also several mining pools that kindly donate a portion of their fees, [a list of them can be found on our Bitcointalk post](https://bitcointalk.org/index.php?topic=583449.0).
+Noxcoin is built for people who believe in the right to private money — without surveillance, censorship, or central control. Whether you're a miner, a developer, a privacy advocate, or a curious newcomer, this is your home.
 
 ## License
 

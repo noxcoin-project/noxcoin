@@ -6,7 +6,7 @@
 - **Website:** https://noxcoin.org  
 - **Explorer:** https://explorer.noxcoin.org/  
 - **Mining Pool:** https://noxcoin.minorpool.com/  
-- **Telegram:** https://t.me/noxcoin_project  
+- **Discord:** https://discord.gg/5J2he6bpSn
 
 ---
 
